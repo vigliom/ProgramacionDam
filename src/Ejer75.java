@@ -5,56 +5,60 @@ public class Ejer75 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		String numeros;
-		System.out.println("Introduzca la linea de numeros a cambiar: ");
+		System.out.println("Introduzca los Numeros:  ");
 		numeros = teclado.nextLine();
 		for (int i = 0; i < numeros.length(); i++) {
 			int n =Integer.parseInt(Character.toString(numeros.charAt(i)));
-				System.out.println(ConvierteEnPalabras(n));
+			
+			System.out.print(ConvierteEnPalotes(n));
+			if(i != numeros.length()-1) {
+				System.out.print("-");
+			}
 		}
 
 	}
 
-	public static String ConvierteEnPalabras(int no) {
+	public static String ConvierteEnPalotes(int no) {
 
-		String numero;
+		String palotes;
 
 		switch (no) {
 		case 0:
-			numero = "cero";
+			palotes = "";
 			break;
 		case 1:
-			numero = "uno";
+			palotes = "|";
 			break;
 		case 2:
-			numero = "dos";
+			palotes = "||";
 			break;
 		case 3:
-			numero = "tres";
+			palotes = "|||";
 			break;
 		case 4:
-			numero = "cuatro";
+			palotes = "||||";
 			break;
 		case 5:
-			numero = "cinco";
+			palotes = "|||||";
 			break;
 		case 6:
-			numero = "seis";
+			palotes = "||||||";
 			break;
 		case 7:
-			numero = "siete";
+			palotes = "|||||||";
 			break;
 		case 8:
-			numero = "ocho";
+			palotes = "||||||||";
 			break;
 		case 9:
-			numero = "nueve";
+			palotes = "|||||||||";
 			break;
 		default:
-			numero = "no_Valido";
+			palotes = "no_Valido";
 			break;
 		}
 
-		return numero;
+		return palotes;
 	}
 
 }
