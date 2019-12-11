@@ -43,6 +43,9 @@ public class ejer83 {
 			
 
 		}
+		if (n == 6) {
+			System.out.println("Enhorabuena, has demostrado que sabes insultar, gilipollas (with love <3)");
+		}
 	}
 /**
  * Elige la frase de la maquina, segun el numero de aciertos elige la opcion
